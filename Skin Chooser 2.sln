@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skin Chooser 2", "Skin Chooser 2\Skin Chooser 2.csproj", "{F5014AD9-27F9-4FD5-9D8D-54955AF9F690}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vayne_Skin", "..\..\..\Visual Studio 2017\Projects\Vayne Skin\Vayne Skin\Vayne_Skin.csproj", "{4A348E6D-6D05-4CF2-9189-3D56FF0AB4AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F5014AD9-27F9-4FD5-9D8D-54955AF9F690}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5014AD9-27F9-4FD5-9D8D-54955AF9F690}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5014AD9-27F9-4FD5-9D8D-54955AF9F690}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5014AD9-27F9-4FD5-9D8D-54955AF9F690}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A348E6D-6D05-4CF2-9189-3D56FF0AB4AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A348E6D-6D05-4CF2-9189-3D56FF0AB4AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A348E6D-6D05-4CF2-9189-3D56FF0AB4AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A348E6D-6D05-4CF2-9189-3D56FF0AB4AF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {600FD23B-2EC9-4C31-A0CD-5A1E104E07C4}
+	EndGlobalSection
+EndGlobal
