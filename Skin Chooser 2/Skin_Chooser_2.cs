@@ -8,7 +8,7 @@ namespace Skin_Chooser_2
 {
     class Skin_Chooser_2
     {
-        //test5
+        //test6
         #region publics
         public static Random randomObject = new Random(); //random to be used for every champ
         public static Array marksman = new[] { 0, 1, 2 };
