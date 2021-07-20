@@ -1,7 +1,0 @@
-C:\Users\Tanner\Documents\Visual Studio 2017\Projects\Vayne Skin\Vayne Skin\bin\Debug\Skin Chooser.exe.config
-C:\Users\Tanner\Documents\Visual Studio 2017\Projects\Vayne Skin\Vayne Skin\bin\Debug\Skin Chooser.exe
-C:\Users\Tanner\Documents\Visual Studio 2017\Projects\Vayne Skin\Vayne Skin\bin\Debug\Skin Chooser.pdb
-C:\Users\Tanner\Documents\Visual Studio 2017\Projects\Vayne Skin\Vayne Skin\obj\Debug\Skin Chooser.csprojAssemblyReference.cache
-C:\Users\Tanner\Documents\Visual Studio 2017\Projects\Vayne Skin\Vayne Skin\obj\Debug\Skin Chooser.csproj.CoreCompileInputs.cache
-C:\Users\Tanner\Documents\Visual Studio 2017\Projects\Vayne Skin\Vayne Skin\obj\Debug\Skin Chooser.exe
-C:\Users\Tanner\Documents\Visual Studio 2017\Projects\Vayne Skin\Vayne Skin\obj\Debug\Skin Chooser.pdb
