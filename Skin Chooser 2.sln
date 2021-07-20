@@ -5,7 +5,7 @@ VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Skin Chooser 2", "Skin Chooser 2\Skin Chooser 2.csproj", "{F5014AD9-27F9-4FD5-9D8D-54955AF9F690}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vayne_Skin", "..\..\..\Visual Studio 2017\Projects\Vayne Skin\Vayne Skin\Vayne_Skin.csproj", "{4A348E6D-6D05-4CF2-9189-3D56FF0AB4AF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vayne_Skin", "..\..\..\..\Documents\Visual Studio 2017\Projects\Vayne Skin\Vayne Skin\Vayne_Skin.csproj", "{4A348E6D-6D05-4CF2-9189-3D56FF0AB4AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
