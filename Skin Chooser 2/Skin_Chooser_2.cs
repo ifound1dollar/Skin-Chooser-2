@@ -8,7 +8,6 @@ namespace Skin_Chooser_2
 {
     class Skin_Chooser_2
     {
-        //test5
         #region publics
         public static Random randomObject = new Random(); //random to be used for every champ
         public static Array marksman = new[] { 0, 1, 2 };
@@ -25,7 +24,7 @@ namespace Skin_Chooser_2
         public static bool invalid; //used for invalid response message
         #endregion
         public static int total = 155; //gwen
-        public static string appVer = "v4.1a"; //version listed in Intro and up top
+        public static string appVer = "v4.2"; //version listed in Intro and up top
         static void Main(string[] args)
         {
             /*while (true)
@@ -87,7 +86,7 @@ namespace Skin_Chooser_2
         static void Reply()
         {
             string r = Console.ReadLine().ToLower();
-            #region misc
+            #region miscellaneous
             if (r == "clear"
                 || r == "cle"
                 || r == "clea") { Loop(); }
@@ -117,22 +116,22 @@ namespace Skin_Chooser_2
                 || r == "aat"
                 || r == "aatr"
                 || r == "aatro"
-                || r == "aatrox") { champNum = 114; }
+                || r == "aatrox") { champNum = 114; ChampName(champNum); }
             if (r == "ah"
                 || r == "ahr"
                 || r == "ninetails"
                 || r == "rule34"
-                || r == "ahri") { champNum = 89; }
+                || r == "ahri") { champNum = 89; ChampName(champNum); }
             if (r == "ak"
                 || r == "aka"
                 || r == "akal"
-                || r == "akali") { champNum = 51; }
+                || r == "akali") { champNum = 51; ChampName(champNum); }
             if (r == "al"
                 || r == "ali"
                 || r == "cow"
                 || r == "alis"
                 || r == "alist"
-                || r == "alistar") { champNum = 1; }
+                || r == "alistar") { champNum = 1; ChampName(champNum); }
             if (r == "am"
                 || r == "mu"
                 || r == "amu"
@@ -140,28 +139,28 @@ namespace Skin_Chooser_2
                 || r == "mummy"
                 || r == "mum"
                 || r == "mumy"
-                || r == "amumu") { champNum = 24; }
+                || r == "amumu") { champNum = 24; ChampName(champNum); }
             if (r == "ani"
                 || r == "egg"
                 || r == "anivegg"
                 || r == "eggnivia"
                 || r == "aniv"
-                || r == "anivia") { champNum = 26; }
+                || r == "anivia") { champNum = 26; ChampName(champNum); }
             if (r == "ann"
                 || r == "anni"
                 || r == "teddy"
                 || r == "teddybear"
                 || r == "teddy bear"
                 || r == "tibbers"
-                || r == "annie") { champNum = 2; }
+                || r == "annie") { champNum = 2; ChampName(champNum); }
             if (r == "aph"
                 || r == "aphe"
                 || r == "aphel"
-                || r == "aphelios") { champNum = 147; }
+                || r == "aphelios") { champNum = 147; ChampName(champNum); }
             if (r == "as"
                 || r == "ash"
                 || r == "slow"
-                || r == "ashe") { champNum = 3; }
+                || r == "ashe") { champNum = 3; ChampName(champNum); }
             if (r == "au"
                 || r == "aur"
                 || r == "sol"
@@ -169,69 +168,69 @@ namespace Skin_Chooser_2
                 || r == "star"
                 || r == "star guy"
                 || r == "aurelion sol"
-                || r == "aurelionsol") { champNum = 130; }
+                || r == "aurelionsol") { champNum = 130; ChampName(champNum); }
             if (r == "az"
                 || r == "azi"
                 || r == "soldier"
                 || r == "soldiers"
-                || r == "azir") { champNum = 121; }
+                || r == "azir") { champNum = 121; ChampName(champNum); }
             #endregion
             #region B
             if (r == "ba"
                 || r == "bar"
-                || r == "bard") { champNum = 124; }
+                || r == "bard") { champNum = 124; ChampName(champNum); }
             if (r == "bl"
                 || r == "bli"
                 || r == "blit"
                 || r == "blitz"
                 || r == "robot"
-                || r == "blitzcrank") { champNum = 34; }
+                || r == "blitzcrank") { champNum = 34; ChampName(champNum); }
             if (r == "bran"
                 || r == "fire"
                 || r == "fire guy"
-                || r == "brand") { champNum = 74; }
+                || r == "brand") { champNum = 74; ChampName(champNum); }
             if (r == "brau"
                 || r == "daddy"
-                || r == "braum") { champNum = 119; }
+                || r == "braum") { champNum = 119; ChampName(champNum); }
             #endregion
             #region C
             if (r == "cai"
                 || r == "cait"
-                || r == "caitlyn") { champNum = 67; }
+                || r == "caitlyn") { champNum = 67; ChampName(champNum); }
             if (r == "cam"
                 || r == "cami"
                 || r == "camil"
-                || r == "camille") { champNum = 134; }
+                || r == "camille") { champNum = 134; ChampName(champNum); }
             if (r == "cas"
                 || r == "cass"
                 || r == "snake"
                 || r == "snake lady"
-                || r == "cassiopeia") { champNum = 66; }
+                || r == "cassiopeia") { champNum = 66; ChampName(champNum); }
             if (r == "cho"
                 || r == "munch"
                 || r == "chogath"
                 || r == "cho gath"
-                || r == "cho'gath") { champNum = 25; }
+                || r == "cho'gath") { champNum = 25; ChampName(champNum); }
             if (r == "co"
                 || r == "cor"
                 || r == "cork"
-                || r == "corki") { champNum = 37; }
+                || r == "corki") { champNum = 37; ChampName(champNum); }
             #endregion
             #region D
             if (r == "da"
                 || r == "dar"
                 || r == "dari"
-                || r == "darius") { champNum = 98; }
+                || r == "darius") { champNum = 98; ChampName(champNum); }
             if (r == "di"
                 || r == "dia"
                 || r == "dian"
                 || r == "moon"
                 || r == "moon lady"
-                || r == "diana") { champNum = 102; }
+                || r == "diana") { champNum = 102; ChampName(champNum); }
             if (r == "dra"
                 || r == "drav"
                 || r == "drave"
-                || r == "draven") { champNum = 99; }
+                || r == "draven") { champNum = 99; ChampName(champNum); }
             if (r == "dr"
                 || r == "dr."
                 || r == "mu"
@@ -239,239 +238,239 @@ namespace Skin_Chooser_2
                 || r == "drmundo"
                 || r == "dr mundo"
                 || r == "dr. mundo"
-                || r == "dr.mundo") { champNum = 35; }
+                || r == "dr.mundo") { champNum = 35; ChampName(champNum); }
             #endregion
             #region E
             if (r == "ek"
                 || r == "ekk"
-                || r == "ekko") { champNum = 125; }
+                || r == "ekko") { champNum = 125; ChampName(champNum); }
             if (r == "el"
                 || r == "spider"
                 || r == "spider lady"
-                || r == "elise") { champNum = 106; }
+                || r == "elise") { champNum = 106; ChampName(champNum); }
             if (r == "ev"
                 || r == "eve"
                 || r == "evelyn"
                 || r == "demon bitch"
-                || r == "evelynn") { champNum = 20; }
+                || r == "evelynn") { champNum = 20; ChampName(champNum); }
             if (r == "ez"
                 || r == "twink"
                 || r == "ezr"
-                || r == "ezreal") { champNum = 47; }
+                || r == "ezreal") { champNum = 47; ChampName(champNum); }
             #endregion
             #region F
             if (r == "fid"
                 || r == "fidd"
                 || r == "fiddle"
                 || r == "spooky"
-                || r == "fiddlesticks") { champNum = 4; }
+                || r == "fiddlesticks") { champNum = 4; ChampName(champNum); }
             if (r == "fio"
                 || r == "fior"
-                || r == "fiora") { champNum = 94; }
+                || r == "fiora") { champNum = 94; ChampName(champNum); }
             if (r == "fiz"
                 || r == "fish"
-                || r == "fizz") { champNum = 87; }
+                || r == "fizz") { champNum = 87; ChampName(champNum); }
             #endregion
             #region G
             if (r == "gal"
                 || r == "gali"
-                || r == "galio") { champNum = 57; }
+                || r == "galio") { champNum = 57; ChampName(champNum); }
             if (r == "gp"
                 || r == "gang"
                 || r == "plank"
-                || r == "gangplank") { champNum = 30; }
+                || r == "gangplank") { champNum = 30; ChampName(champNum); }
             if (r == "gar"
                 || r == "demacia"
                 || r == "gare"
-                || r == "garen") { champNum = 50; }
+                || r == "garen") { champNum = 50; ChampName(champNum); }
             if (r == "gn"
                 || r == "gna"
-                || r == "gnar") { champNum = 120; }
+                || r == "gnar") { champNum = 120; ChampName(champNum); }
             if (r == "grag"
                 || r == "fat"
                 || r == "fatty"
                 || r == "large"
                 || r == "graga"
-                || r == "gragas") { champNum = 44; }
+                || r == "gragas") { champNum = 44; ChampName(champNum); }
             if (r == "grav"
                 || r == "grave"
-                || r == "graves") { champNum = 85; }
+                || r == "graves") { champNum = 85; ChampName(champNum); }
             if (r == "gw"
                 || r == "gwe"
                 || r == "gwen"
                 || r == "scissor"
-                || r == "scissors") { champNum = 155; }
+                || r == "scissors") { champNum = 155; ChampName(champNum); }
             #endregion
             #region H
             if (r == "hec"
                 || r == "heca"
                 || r == "horse guy"
-                || r == "hecarim") { champNum = 96; }
+                || r == "hecarim") { champNum = 96; ChampName(champNum); }
             if (r == "donger"
                 || r == "dong"
                 || r == "dinger"
                 || r == "heim"
                 || r == "heime"
                 || r == "heimer"
-                || r == "heimerdinger") { champNum = 39; }
+                || r == "heimerdinger") { champNum = 39; ChampName(champNum); }
             #endregion
             #region I
             if (r == "il"
                 || r == "ill"
                 || r == "illa"
                 || r == "illao"
-                || r == "illaoi") { champNum = 128; }
+                || r == "illaoi") { champNum = 128; ChampName(champNum); }
             if (r == "ir"
                 || r == "ire"
                 || r == "irel"
-                || r == "irelia") { champNum = 64; }
+                || r == "irelia") { champNum = 64; ChampName(champNum); }
             if (r == "iv"
                 || r == "ive"
                 || r == "iver"
                 || r == "green"
                 || r == "tree dude"
-                || r == "ivern") { champNum = 133; }
+                || r == "ivern") { champNum = 133; ChampName(champNum); }
             #endregion
             #region J
             if (r == "ja"
                 || r == "jan"
                 || r == "jana"
-                || r == "janna") { champNum = 33; }
+                || r == "janna") { champNum = 33; ChampName(champNum); }
             if (r == "j4"
                 || r == "jar"
                 || r == "jarv"
                 || r == "jarvan"
                 || r == "jarvan4"
-                || r == "jarvaniv") { champNum = 71; }
+                || r == "jarvaniv") { champNum = 71; ChampName(champNum); }
             if (r == "jax"
                 || r == "realweapon"
-                || r == "real weapon") { champNum = 5; }
+                || r == "real weapon") { champNum = 5; ChampName(champNum); }
             if (r == "jay"
                 || r == "jayc"
-                || r == "jayce") { champNum = 100; }
+                || r == "jayce") { champNum = 100; ChampName(champNum); }
             if (r == "jh"
                 || r == "jhi"
                 || r == "4"
                 || r == "four"
-                || r == "jhin") { champNum = 129; }
+                || r == "jhin") { champNum = 129; ChampName(champNum); }
             if (r == "ji"
                 || r == "jin"
-                || r == "jinx") { champNum = 116; }
+                || r == "jinx") { champNum = 116; ChampName(champNum); }
             #endregion
             #region K
             if (r == "kai"
                 || r == "kaisa"
                 || r == "kai sa"
-                || r == "kai'sa") { champNum = 140; }
+                || r == "kai'sa") { champNum = 140; ChampName(champNum); }
             if (r == "kal"
                 || r == "kali"
                 || r == "kalis"
                 || r == "kalist"
-                || r == "kalista") { champNum = 122; }
+                || r == "kalista") { champNum = 122; ChampName(champNum); }
             if (r == "karm"
-                || r == "karma") { champNum = 69; }
+                || r == "karma") { champNum = 69; ChampName(champNum); }
             if (r == "kart"
                 || r == "karth"
                 || r == "karthu"
-                || r == "karthus") { champNum = 23; }
+                || r == "karthus") { champNum = 23; ChampName(champNum); }
             if (r == "kas"
                 || r == "kass"
                 || r == "16"
                 || r == "sixteen"
                 || r == "level16"
                 || r == "level 16"
-                || r == "kassadin") { champNum = 29; }
+                || r == "kassadin") { champNum = 29; ChampName(champNum); }
             if (r == "kat"
                 || r == "kata"
                 || r == "reset"
                 || r == "resets"
-                || r == "katarina") { champNum = 36; }
+                || r == "katarina") { champNum = 36; ChampName(champNum); }
             if (r == "kayl"
-                || r == "kayle") { champNum = 6; }
+                || r == "kayle") { champNum = 6; ChampName(champNum); }
             if (r == "kany"
                 || r == "kane"
                 || r == "rhaast"
                 || r == "rhast"
                 || r == "darkin"
-                || r == "kayn") { champNum = 137; }
+                || r == "kayn") { champNum = 137; ChampName(champNum); }
             if (r == "ke"
                 || r == "ken"
                 || r == "kenn"
                 || r == "kenne"
-                || r == "kennen") { champNum = 49; }
+                || r == "kennen") { champNum = 49; ChampName(champNum); }
             if (r == "kha"
                 || r == "khazix"
                 || r == "k6"
                 || r == "bug"
                 || r == "kha zix"
-                || r == "kha'zix") { champNum = 105; }
+                || r == "kha'zix") { champNum = 105; ChampName(champNum); }
             if (r == "ki"
                 || r == "kin"
                 || r == "kind"
                 || r == "kindr"
                 || r == "kindre"
-                || r == "kindred") { champNum = 127; }
+                || r == "kindred") { champNum = 127; ChampName(champNum); }
             if (r == "kl"
                 || r == "kle"
-                || r == "kled") { champNum = 132; }
+                || r == "kled") { champNum = 132; ChampName(champNum); }
             if (r == "kog"
                 || r == "kogm"
                 || r == "kogmaw"
                 || r == "kog maw"
-                || r == "kog'maw") { champNum = 54; }
+                || r == "kog'maw") { champNum = 54; ChampName(champNum); }
             #endregion
             #region L
             if (r == "lb"
                 || r == "leb"
                 || r == "lebl"
-                || r == "leblanc") { champNum = 63; }
+                || r == "leblanc") { champNum = 63; ChampName(champNum); }
             if (r == "lee"
                 || r == "sin"
                 || r == "leesin"
-                || r == "lee sin") { champNum = 73; }
+                || r == "lee sin") { champNum = 73; ChampName(champNum); }
             if (r == "leo"
                 || r == "leon"
-                || r == "leona") { champNum = 79; }
+                || r == "leona") { champNum = 79; ChampName(champNum); }
             if (r == "lil"
                 || r == "lili"
                 || r == "deer"
                 || r == "lilia"
-                || r == "lillia") { champNum = 149; }
+                || r == "lillia") { champNum = 149; ChampName(champNum); }
             if (r == "lis"
                 || r == "liss"
                 || r == "ice queen"
-                || r == "lissandra") { champNum = 113; }
+                || r == "lissandra") { champNum = 113; ChampName(champNum); }
             if (r == "luc"
                 || r == "luci"
                 || r == "lucia"
-                || r == "lucian") { champNum = 115; }
+                || r == "lucian") { champNum = 115; ChampName(champNum); }
             if (r == "lul"
                 || r == "poly"
                 || r == "squirrel"
                 || r == "polymorph"
-                || r == "lulu") { champNum = 95; }
+                || r == "lulu") { champNum = 95; ChampName(champNum); }
             if (r == "lux"
-                || r == "light lady") { champNum = 62; }
+                || r == "light lady") { champNum = 62; ChampName(champNum); }
             #endregion
             #region M
             if (r == "yi"
                 || r == "mas"
                 || r == "master"
                 || r == "masteryi"
-                || r == "master yi") { champNum = 7; }
+                || r == "master yi") { champNum = 7; ChampName(champNum); }
             if (r == "malp"
                 || r == "malph"
                 || r == "rock"
                 || r == "mountain"
-                || r == "malphite") { champNum = 20; }
+                || r == "malphite") { champNum = 20; ChampName(champNum); }
             if (r == "malz"
                 || r == "malza"
                 || r == "press r"
-                || r == "malzahar") { champNum = 52; }
+                || r == "malzahar") { champNum = 52; ChampName(champNum); }
             if (r == "mao"
                 || r == "maok"
                 || r == "tree"
-                || r == "maokai") { champNum = 70; }
+                || r == "maokai") { champNum = 70; ChampName(champNum); }
             if (r == "mf"
                 || r == "mis"
                 || r == "for"
@@ -479,144 +478,144 @@ namespace Skin_Chooser_2
                 || r == "fortune"
                 || r == "miss"
                 || r == "missfortune"
-                || r == "miss fortune") { champNum = 59; }
+                || r == "miss fortune") { champNum = 59; ChampName(champNum); }
             if (r == "mord"
                 || r == "morde"
                 || r == "kaiser"
                 || r == "death realm"
-                || r == "mordekaiser") { champNum = 46; }
+                || r == "mordekaiser") { champNum = 46; ChampName(champNum); }
             if (r == "morg"
                 || r == "morga"
                 || r == "morgan"
                 || r == "black shield"
-                || r == "morgana") { champNum = 8; }
+                || r == "morgana") { champNum = 8; ChampName(champNum); }
             #endregion
             #region N
             if (r == "nam"
-                || r == "nami") { champNum = 108; }
+                || r == "nami") { champNum = 108; ChampName(champNum); }
             if (r == "nas"
                 || r == "nasu"
                 || r == "susan"
-                || r == "nasus") { champNum = 38; }
+                || r == "nasus") { champNum = 38; ChampName(champNum); }
             if (r == "naut"
                 || r == "nauti"
                 || r == "nautil"
                 || r == "nautilu"
                 || r == "anchor"
-                || r == "nautilus") { champNum = 93; }
+                || r == "nautilus") { champNum = 93; ChampName(champNum); }
             if (r == "ne"
                 || r == "nee"
                 || r == "neek"
                 || r == "lesbian"
-                || r == "neeko") { champNum = 142; }
+                || r == "neeko") { champNum = 142; ChampName(champNum); }
             if (r == "ni"
                 || r == "nid"
                 || r == "nida"
                 || r == "cat lady"
-                || r == "nidalee") { champNum = 42; }
+                || r == "nidalee") { champNum = 42; ChampName(champNum); }
             if (r == "no"
                 || r == "noc"
                 || r == "noct"
                 || r == "noctu"
                 || r == "nightmare"
-                || r == "nocturne") { champNum = 72; }
+                || r == "nocturne") { champNum = 72; ChampName(champNum); }
             if (r == "nu"
                 || r == "willump"
                 || r == "nunuandwillump"
                 || r == "nunu and willump"
                 || r == "nunu&willump"
                 || r == "nunu & willump"
-                || r == "nunu") { champNum = 9; }
+                || r == "nunu") { champNum = 9; ChampName(champNum); }
             #endregion
             #region O
             if (r == "ol"
                 || r == "ola"
-                || r == "olaf") { champNum = 53; }
+                || r == "olaf") { champNum = 53; ChampName(champNum); }
             if (r == "ori"
                 || r == "oria"
                 || r == "orian"
                 || r == "oriana"
-                || r == "orianna") { champNum = 77; }
+                || r == "orianna") { champNum = 77; ChampName(champNum); }
             if (r == "orn"
                 || r == "horn"
-                || r == "ornn") { champNum = 138; }
+                || r == "ornn") { champNum = 138; ChampName(champNum); }
             #endregion
             #region P
             if (r == "pa"
                 || r == "pan"
                 || r == "pant"
                 || r == "panth"
-                || r == "pantheon") { champNum = 45; }
+                || r == "pantheon") { champNum = 45; ChampName(champNum); }
             if (r == "pop"
                 || r == "popp"
                 || r == "popy"
-                || r == "poppy") { champNum = 43; }
+                || r == "poppy") { champNum = 43; ChampName(champNum); }
             if (r == "py"
                 || r == "pyk"
-                || r == "pyke") { champNum = 141; }
+                || r == "pyke") { champNum = 141; ChampName(champNum); }
             #endregion
             #region Q
             if (r == "qi"
                 || r == "qiy"
                 || r == "qiya"
                 || r == "qiyan"
-                || r == "qiyana") { champNum = 145; }
+                || r == "qiyana") { champNum = 145; ChampName(champNum); }
             if (r == "qu"
                 || r == "qui"
                 || r == "valor"
                 || r == "bird lady"
                 || r == "quin"
-                || r == "quinn") { champNum = 111; }
+                || r == "quinn") { champNum = 111; ChampName(champNum); }
             #endregion
             #region R
             if (r == "rak"
-                || r == "rakan") { champNum = 135; }
+                || r == "rakan") { champNum = 135; ChampName(champNum); }
             if (r == "ram"
                 || r == "ramm"
                 || r == "ok"
-                || r == "rammus") { champNum = 29; }
+                || r == "rammus") { champNum = 29; ChampName(champNum); }
             if (r == "rek"
                 || r == "reks"
                 || r == "reksai"
                 || r == "rek sai"
-                || r == "rek'sai") { champNum = 123; }
+                || r == "rek'sai") { champNum = 123; ChampName(champNum); }
             if (r == "rel"
-                || r == "rell") { champNum = 153; }
+                || r == "rell") { champNum = 153; ChampName(champNum); }
             if (r == "rene"
                 || r == "croc"
                 || r == "crocodile"
                 || r == "renek"
-                || r == "renekton") { champNum = 68; }
+                || r == "renekton") { champNum = 68; ChampName(champNum); }
             if (r == "reng"
                 || r == "renga"
                 || r == "knifecat"
                 || r == "knife cat"
-                || r == "rengar") { champNum = 103; }
+                || r == "rengar") { champNum = 103; ChampName(champNum); }
             if (r == "riv"
                 || r == "rive"
-                || r == "riven") { champNum = 83; }
+                || r == "riven") { champNum = 83; ChampName(champNum); }
             if (r == "rum"
                 || r == "rumb"
                 || r == "rumbl"
-                || r == "rumble") { champNum = 75; }
+                || r == "rumble") { champNum = 75; ChampName(champNum); }
             if (r == "ry"
                 || r == "ryz"
                 || r == "rework"
                 || r == "reworks"
-                || r == "ryze") { champNum = 10; }
+                || r == "ryze") { champNum = 10; ChampName(champNum); }
             #endregion
             #region S
             if (r == "sa"
                 || r == "sam"
                 || r == "sami"
                 || r == "samir"
-                || r == "samira") { champNum = 151; }
+                || r == "samira") { champNum = 151; ChampName(champNum); }
             if (r == "sej"
                 || r == "seju"
-                || r == "sejuani") { champNum = 91; }
+                || r == "sejuani") { champNum = 91; ChampName(champNum); }
             if (r == "sen"
                 || r == "senn"
-                || r == "senna") { champNum = 146; }
+                || r == "senna") { champNum = 146; ChampName(champNum); }
             if (r == "ser"
                 || r == "sera"
                 || r == "phine"
@@ -627,52 +626,52 @@ namespace Skin_Chooser_2
                 || r == "seraph"
                 || r == "seraphi"
                 || r == "seraphin"
-                || r == "seraphine") { champNum = 152; }
+                || r == "seraphine") { champNum = 152; ChampName(champNum); }
             if (r == "set"
                 || r == "hot"
-                || r == "sett") { champNum = 148; }
+                || r == "sett") { champNum = 148; ChampName(champNum); }
             if (r == "sha"
                 || r == "shac"
-                || r == "shaco") { champNum = 40; }
+                || r == "shaco") { champNum = 40; ChampName(champNum); }
             if (r == "she"
-                || r == "shen") { champNum = 48; }
+                || r == "shen") { champNum = 48; ChampName(champNum); }
             if (r == "shy"
                 || r == "shyv"
                 || r == "dragon lady"
-                || r == "shyvana") { champNum = 86; }
+                || r == "shyvana") { champNum = 86; ChampName(champNum); }
             if (r == "sin"
                 || r == "sing"
                 || r == "singe"
-                || r == "singed") { champNum = 18; }
+                || r == "singed") { champNum = 18; ChampName(champNum); }
             if (r == "sio"
-                || r == "sion") { champNum = 11; }
+                || r == "sion") { champNum = 11; ChampName(champNum); }
             if (r == "siv"
                 || r == "sivi"
-                || r == "sivir") { champNum = 12; }
+                || r == "sivir") { champNum = 12; ChampName(champNum); }
             if (r == "sk"
                 || r == "ska"
                 || r == "skar"
                 || r == "skarn"
-                || r == "skarner") { champNum = 81; }
+                || r == "skarner") { champNum = 81; ChampName(champNum); }
             if (r == "son"
-                || r == "sona") { champNum = 60; }
+                || r == "sona") { champNum = 60; ChampName(champNum); }
             if (r == "sor"
                 || r == "sora"
                 || r == "raka"
-                || r == "soraka") { champNum = 13; }
+                || r == "soraka") { champNum = 13; ChampName(champNum); }
             if (r == "sw"
                 || r == "swa"
                 || r == "swai"
                 || r == "bird guy"
-                || r == "swain") { champNum = 61; }
+                || r == "swain") { champNum = 61; ChampName(champNum); }
             if (r == "syl"
                 || r == "syla"
                 || r == "chains"
-                || r == "sylas") { champNum = 143; }
+                || r == "sylas") { champNum = 143; ChampName(champNum); }
             if (r == "syn"
                 || r == "synd"
                 || r == "syndr"
-                || r == "syndra") { champNum = 104; }
+                || r == "syndra") { champNum = 104; ChampName(champNum); }
             #endregion
             #region T
             if (r == "tah"
@@ -682,74 +681,74 @@ namespace Skin_Chooser_2
                 || r == "kench"
                 || r == "frog"
                 || r == "tahmkench"
-                || r == "tahm kench") { champNum = 126; }
+                || r == "tahm kench") { champNum = 126; ChampName(champNum); }
             if (r == "tali"
                 || r == "taliy"
                 || r == "taliya"
                 || r == "rock lady"
-                || r == "taliyah") { champNum = 131; }
+                || r == "taliyah") { champNum = 131; ChampName(champNum); }
             if (r == "talo"
                 || r == "firstblood"
                 || r == "first blood"
                 || r == "25%"
-                || r == "talon") { champNum = 82; }
+                || r == "talon") { champNum = 82; ChampName(champNum); }
             if (r == "tar"
                 || r == "tari"
-                || r == "taric") { champNum = 31; }
+                || r == "taric") { champNum = 31; ChampName(champNum); }
             if (r == "tee"
                 || r == "teem"
                 || r == "aids"
-                || r == "teemo") { champNum = 14; }
+                || r == "teemo") { champNum = 14; ChampName(champNum); }
             if (r == "th"
                 || r == "thr"
                 || r == "thre"
                 || r == "thres"
-                || r == "thresh") { champNum = 110; }
+                || r == "thresh") { champNum = 110; ChampName(champNum); }
             if (r == "tri"
                 || r == "tris"
                 || r == "trist"
                 || r == "trista"
                 || r == "tristan"
-                || r == "tristana") { champNum = 15; }
+                || r == "tristana") { champNum = 15; ChampName(champNum); }
             if (r == "tru"
                 || r == "trun"
                 || r == "trund"
                 || r == "trundl"
-                || r == "trundle") { champNum = 65; }
+                || r == "trundle") { champNum = 65; ChampName(champNum); }
             if (r == "try"
                 || r == "tryn"
                 || r == "trynd"
                 || r == "trynda"
-                || r == "tryndamere") { champNum = 22; }
+                || r == "tryndamere") { champNum = 22; ChampName(champNum); }
             if (r == "tf"
                 || r == "fate"
                 || r == "twistedfate"
-                || r == "twisted fate") { champNum = 16; }
+                || r == "twisted fate") { champNum = 16; ChampName(champNum); }
             if (r == "tw"
                 || r == "rat"
                 || r == "sewer rat"
                 || r == "twi"
                 || r == "twit"
                 || r == "twitc"
-                || r == "twitch") { champNum = 21; }
+                || r == "twitch") { champNum = 21; ChampName(champNum); }
             #endregion
             #region U
             if (r == "ud"
                 || r == "udy"
-                || r == "udyr") { champNum = 41; }
+                || r == "udyr") { champNum = 41; ChampName(champNum); }
             if (r == "ur"
                 || r == "urg"
                 || r == "urgo"
-                || r == "urgot") { champNum = 58; }
+                || r == "urgot") { champNum = 58; ChampName(champNum); }
             #endregion
             #region V
             if (r == "var"
                 || r == "varu"
-                || r == "varus") { champNum = 97; }
+                || r == "varus") { champNum = 97; ChampName(champNum); }
             if (r == "vn"
                 || r == "vay"
                 || r == "vayn"
-                || r == "vayne") { champNum = 76; }
+                || r == "vayne") { champNum = 76; ChampName(champNum); ChampName(champNum); }
             if (r == "sb"
                 || r == "sp"
                 || r == "spi"
@@ -758,11 +757,11 @@ namespace Skin_Chooser_2
                 || r == "flor"
                 || r == "spirit"
                 || r == "blossom"
-                || r == "spirit blossom") { champNum = 1076; }
+                || r == "spirit blossom") { champNum = 1076; ChampName(champNum); }
             if (r == "vei"
                 || r == "veig"
                 || r == "veiga"
-                || r == "veigar") { champNum = 28; }
+                || r == "veigar") { champNum = 28; ChampName(champNum); }
             if (r == "vel"
                 || r == "eye"
                 || r == "eye of sauron"
@@ -770,128 +769,121 @@ namespace Skin_Chooser_2
                 || r == "velko"
                 || r == "velkoz"
                 || r == "vel koz"
-                || r == "vel'koz") { champNum = 118; }
+                || r == "vel'koz") { champNum = 118; ChampName(champNum); }
             if (r == "6"
                 || r == "six"
-                || r == "vi") { champNum = 109; }
+                || r == "vi") { champNum = 109; ChampName(champNum); }
             if (r == "vie"
                 || r == "vieg"
                 || r == "viego"
-                || r == "bork") { champNum = 154; }
+                || r == "bork") { champNum = 154; ChampName(champNum); }
             if (r == "vik"
                 || r == "vikt"
                 || r == "vikto"
-                || r == "viktor") { champNum = 90; }
+                || r == "viktor") { champNum = 90; ChampName(champNum); }
             if (r == "blood"
                 || r == "vla"
                 || r == "vlad"
                 || r == "vladi"
                 || r == "vladim"
                 || r == "vladimi"
-                || r == "vladimir") { champNum = 56; }
+                || r == "vladimir") { champNum = 56; ChampName(champNum); }
             if (r == "vo"
                 || r == "vb"
                 || r == "vol"
                 || r == "voli"
                 || r == "volib"
                 || r == "bear"
-                || r == "volibear") { champNum = 88; }
+                || r == "volibear") { champNum = 88; ChampName(champNum); }
             #endregion
             #region W
             if (r == "ww"
                 || r == "war"
                 || r == "wick"
-                || r == "warwick") { champNum = 17; }
+                || r == "warwick") { champNum = 17; ChampName(champNum); }
             if (r == "wu"
                 || r == "wuk"
                 || r == "wuko"
                 || r == "wukon"
-                || r == "wukong") { champNum = 80; }
+                || r == "wukong") { champNum = 80; ChampName(champNum); }
             #endregion
             #region X
             if (r == "xa"
                 || r == "xay"
                 || r == "xaya"
-                || r == "xayah") { champNum = 136; }
+                || r == "xayah") { champNum = 136; ChampName(champNum); }
             if (r == "xe"
                 || r == "xer"
                 || r == "xerath"
-                || r == "xerat") { champNum = 84; }
+                || r == "xerat") { champNum = 84; ChampName(champNum); }
             if (r == "xi"
                 || r == "xin"
                 || r == "xinz"
                 || r == "zhao"
                 || r == "xinzhao"
-                || r == "xin zhao") { champNum = 55; }
+                || r == "xin zhao") { champNum = 55; ChampName(champNum); }
             #endregion
             #region Y
             if (r == "ya"
                 || r == "yas"
                 || r == "yasu"
-                || r == "yasuo") { champNum = 117; }
+                || r == "yasuo") { champNum = 117; ChampName(champNum); }
             if (r == "yon"
                 || r == "better yasuo"
-                || r == "yone") { champNum = 150; }
+                || r == "yone") { champNum = 150; ChampName(champNum); }
             if (r == "yor"
                 || r == "yori"
                 || r == "yoric"
-                || r == "yorick") { champNum = 78; }
+                || r == "yorick") { champNum = 78; ChampName(champNum); }
             if (r == "yu"
                 || r == "damn cat"
                 || r == "yum"
                 || r == "yumi"
                 || r == "yummi"
-                || r == "yuumi") { champNum = 144; }
+                || r == "yuumi") { champNum = 144; ChampName(champNum); }
             #endregion
             #region Z
             if (r == "za"
-                || r == "zac") { champNum = 112; }
+                || r == "zac") { champNum = 112; ChampName(champNum); }
             if (r == "ze"
-                || r == "zed") { champNum = 107; }
+                || r == "zed") { champNum = 107; ChampName(champNum); }
             if (r == "zig"
                 || r == "bomb"
                 || r == "bombs"
                 || r == "zigs"
                 || r == "zigg"
-                || r == "ziggs") { champNum = 92; }
+                || r == "ziggs") { champNum = 92; ChampName(champNum); }
             if (r == "zil"
                 || r == "zile"
                 || r == "zilea"
                 || r == "groovy"
-                || r == "zilean") { champNum = 19; }
+                || r == "zilean") { champNum = 19; ChampName(champNum); }
             if (r == "zo"
                 || r == "cancer"
                 || r == "aids"
-                || r == "zoe") { champNum = 139; }
+                || r == "zoe") { champNum = 139; ChampName(champNum); }
             if (r == "zy"
                 || r == "zyr"
                 || r == "plant"
                 || r == "plants"
                 || r == "plant lady"
-                || r == "zyra") { champNum = 101; }
+                || r == "zyra") { champNum = 101; ChampName(champNum); }
             #endregion
             #endregion
             #region dragonslayer
-            if (r == "ds" && champNum == 76
-                || r == "ds" && champNum == 1076) { Dragonslayer(); }
-            if (r == "dra" && champNum == 76
-                || r == "dra" && champNum == 1076) { Dragonslayer(); }
-            if (r == "drag" && champNum == 76
-                || r == "drag" && champNum == 1076) { Dragonslayer(); }
-            if (r == "dragon" && champNum == 76
-                || r == "dragon" && champNum == 1076) { Dragonslayer(); }
-            if (r == "slayer" && champNum == 76
-                || r == "slayer" && champNum == 1076) { Dragonslayer(); }
-            if (r == "dragonslayer" && champNum == 76
-                || r == "dragonslayer" && champNum == 1076) { Dragonslayer(); }
+            if (champNum == 76 || champNum == 1076) {
+                if (r == "ds"
+                    || r == "dra"
+                    || r == "drag"
+                    || r == "dragon"
+                    || r == "slayer"
+                    || r == "dragonslayer") { Dragonslayer(); }
+                }
             #endregion
-            if (champNum != oldchampNum) { ChampName(champNum); }
-            else if (r.Length > 0 && dragonslayer == false && champNum != oldchampNum)
-            /*if Reply() is more than enter but doesn't run a function, it will output an error message and
-            return to the loop, where it will then continue. The else if() checks for length, ensures
-            Dragonslayer() hasn't been run, and checks for a champion change so it doesn't run when the
-            user types "vayne" in Vayne Mode, for instance (there would be no change in that instance).
-            */ 
+            if (r.Length > 0 && dragonslayer == false)
+            /* if Reply() is more than enter but doesn't run a function, it will output an error message
+            and return to the loop, where it will then continue. The if() checks for length and
+            ensures Dragonslayer() hasn't been run. */
             {
                 invalid = true;
                 Console.ForegroundColor = ConsoleColor.Red;
@@ -1256,6 +1248,12 @@ namespace Skin_Chooser_2
             Console.ForegroundColor = ConsoleColor.Cyan;
             Console.Write("v4.1a (07/17/21): "); Console.ForegroundColor = ConsoleColor.White;
             Console.WriteLine("Added Gwen.");
+
+            Console.ForegroundColor = ConsoleColor.Cyan;
+            Console.Write("v4.2 (08/12/21): "); Console.ForegroundColor = ConsoleColor.White;
+            Console.WriteLine("Added 'invalid response' message when input is not proper. Had to " +
+                "call champName function inside");
+            Console.WriteLine("   Reply(). Also rewrote the Dragonslayer() call operator.");
 
             //end list
             Console.WriteLine("");
