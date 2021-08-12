@@ -22,7 +22,7 @@ namespace Skin_Chooser_2
         public static string champion = "VAYNE"; //string that's displayed up top
 
         public static bool dragonslayer; //used for dragonslayer function
-        //public static bool invalid; //used for invalid response message
+        public static bool invalid; //used for invalid response message
         #endregion
         public static int total = 155; //gwen
         public static string appVer = "v4.1a"; //version listed in Intro and up top
@@ -79,7 +79,7 @@ namespace Skin_Chooser_2
                 Console.ForegroundColor = ConsoleColor.Magenta;
                 Reply();
                 if (dragonslayer == true) { dragonslayer = false; continue; }
-                //if (invalid == true) { invalid = false; continue; }
+                if (invalid == true) { invalid = false; continue; }
                 Console.ForegroundColor = ConsoleColor.Green;
                 Choose();
             }
@@ -886,15 +886,18 @@ namespace Skin_Chooser_2
                 || r == "dragonslayer" && champNum == 1076) { Dragonslayer(); }
             #endregion
             if (champNum != oldchampNum) { ChampName(champNum); }
-            /*
-            else if (r.Length > 0 && dragonslayer == false)
+            else if (r.Length > 0 && dragonslayer == false && champNum != oldchampNum)
+            /*if Reply() is more than enter but doesn't run a function, it will output an error message and
+            return to the loop, where it will then continue. The else if() checks for length, ensures
+            Dragonslayer() hasn't been run, and checks for a champion change so it doesn't run when the
+            user types "vayne" in Vayne Mode, for instance (there would be no change in that instance).
+            */ 
             {
                 invalid = true;
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine("Invalid input. Please try again.");
                 Console.WriteLine("");
             }
-            */
         }
         static void ChampName(int num)
         {
