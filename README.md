@@ -1,5 +1,4 @@
 # Skin-Chooser-2
-test
 
 This is an old project, from which 'League Randomizer' was based on.
 
